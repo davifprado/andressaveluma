@@ -28,7 +28,9 @@ a {
 }
 
 header nav {
+    background-color: rgba(247, 215, 148, 1.5);
     z-index: 1000;
+    font-size: 1.1rem
 }
 
 .img_parallax_topo {
@@ -116,5 +118,9 @@ section {
     }
     .column h2 {
         text-align: center;
+    }
+    header {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 }
