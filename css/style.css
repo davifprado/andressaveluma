@@ -19,7 +19,7 @@ html {
     font-family: 'OpenSans-Light';
     font-weight: 400;
     line-height: 1.8em;
-    color: white;
+    color: black;
     z-index: -1;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 .img_parallax_topo {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/first_page.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/logo.png");
     min-height: 100%;
     opacity: .8;
     position: relative;
@@ -117,7 +117,7 @@ section {
 }
 
 .column h2 {
-    text-decoration: teal;
+    text-align: center;
     margin: 15px
 }
 
