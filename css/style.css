@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'OpenSans-Light';
-    src: url("../fonts/OpenSansCondensed-Light");
+    src: url("../fonts/OpenSansCondensed-Light.ttf");
     font-size: 1em;
 }
 
@@ -16,10 +16,10 @@ html {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'OpenSans';
+    font-family: 'OpenSans-Light';
     font-weight: 400;
     line-height: 1.8em;
-    color: rgb(26, 26, 26);
+    color: white;
     z-index: -1;
 }
 
@@ -27,14 +27,26 @@ a {
     text-decoration: none;
 }
 
-header nav {
-    background-color: rgba(247, 215, 148, 1.5);
-    z-index: 1000;
-    font-size: 1.1rem
+header {
+    background-color: rgb(247, 215, 148);
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .img_parallax_topo {
-    background-image: url("../images/first_page.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/first_page.png");
     min-height: 100%;
     opacity: .8;
     position: relative;
@@ -59,6 +71,13 @@ section {
     vertical-align: middle;
     text-align: left;
     font-size: 25px;
+}
+
+.nav-item {
+    margin: 5px;
+    text-align: center;
+    height: auto;
+    width: auto;
 }
 
 .btn_site {
@@ -93,6 +112,13 @@ section {
 
 .column h1 {
     text-align: center;
+    font-family: 'OpenSans';
+    margin: 15px
+}
+
+.column h2 {
+    text-decoration: teal;
+    margin: 15px
 }
 
 @media screen and (max-width:860px) {
@@ -106,6 +132,14 @@ section {
     .column h2 {
         text-align: center;
     }
+    .nav-item {
+        background-color: rgba(247, 215, 148, 1);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        height: 50px;
+    }
 }
 
 @media screen and (max-width:468px) {
@@ -115,6 +149,7 @@ section {
     }
     .column {
         width: 100%;
+        margin-top: 50%;
     }
     .column h2 {
         text-align: center;
@@ -122,5 +157,13 @@ section {
     header {
         font-size: 1.5rem;
         line-height: 1.5rem;
+    }
+    .nav-item {
+        background-color: rgba(247, 215, 148, 1);
+        margin: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        height: 50px;
     }
 }
