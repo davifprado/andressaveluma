@@ -74,7 +74,7 @@ section {
 }
 
 .item {
-    align-self: center;
+    align-self: baseline;
     width: 50%;
     margin-top: 5%;
     text-align: center;
@@ -83,7 +83,7 @@ section {
 .item img {
     width: 70%;
     border-bottom: 5px rgb(245, 178, 159) ridge;
-    border-radius: 45%;
+    border-radius: 25%;
 }
 
 .item h1 {
