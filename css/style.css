@@ -245,13 +245,16 @@ section {
         width: 100%;
         margin-top: 15%;
         text-align: justify;
-        padding: 2px;
+        padding: 10px;
     }
     .item-sobre:nth-child(1),
     .item-sobre:nth-child(4),
     .item-sobre:nth-child(5) {
         margin-top: 15%;
         width: 100%;
+    }
+    .item-sobre h2 {
+        font-size: 2rem;
     }
     header {
         font-size: 1.5rem;
