@@ -14,9 +14,9 @@ html {
     padding: 0;
     font-size: 16px;
     font-family: 'OpenSans-Light';
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.8em;
-    color: rgba(26, 26, 26, .8);
+    color: rgba(26, 26, 26, 1);
     letter-spacing: 3px;
     background-color: rgba(245,178,159,0.1);
 }
