@@ -1,6 +1,16 @@
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'OpenSans-Bold';
     src: url("../fonts/OpenSansCondensed-Bold.ttf");
+    font-size: 1em;
+}
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+    font-size: 1em;
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url("../fonts/OpenSans-Regular.ttf");
     font-size: 1em;
 }
 
@@ -17,11 +27,14 @@ html {
     padding: 0;
     font-size: 16px;
     font-family: 'OpenSans-Light';
+    font-weight: 500;
     line-height: 1.8em;
     color: black;
+    background-color: rgba(245,178,159,0.1);
+    /* background-color: linear-gradient(rgba(245,178,159,1) 100%, rgba(245,178,159,0.2) 100%); */
 }
 
-.img_parallax_topo {
+/* .img_parallax_topo {
     position: absolute;
     background-image: url('../images/logo.png');
     background-position: center center;
@@ -31,14 +44,14 @@ html {
     min-height: 100%;
     opacity: .3;
     z-index: -1;
-}
+} */
 
 a {
     text-decoration: none;
 }
 
 header {
-    background-color: rgb(247, 215, 148);
+    background-color: rgb(245, 178, 159);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=90);
     -moz-opacity: 0.90;
@@ -85,7 +98,7 @@ section {
 
 .item h1 {
     text-align: center;
-    font-family: 'OpenSans';
+    font-family: 'OpenSans-Bold';
     color: rgba(26, 26, 26, .8);
     margin: 15px
 }
@@ -173,11 +186,11 @@ section {
     margin: 5px 10%;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    background-color: rgba(247, 215, 148, 0.7);
+    background-color: rgba(245, 178, 159, 0.7);
 }
 
 .btn_site:hover {
-    background-color: rgba(247, 215, 148, 1.0);
+    background-color: rgba(245, 178, 159, 1.0);
     transform: scale(1.1);
 }
 
@@ -188,11 +201,11 @@ section {
     margin: 5px 10%;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    background-color: rgba(254, 211, 48, 0.9);
+    background-color: rgba(246, 135, 108, 0.9);
 }
 
 .btn_wpp:hover {
-    background-color: rgba(254, 211, 48, 1.0);
+    background-color: rgb(246, 135, 108);
     transform: scale(1.1);
 }
 
@@ -201,11 +214,11 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px rgba(247, 215, 148, .7) solid;
+    border: 1px rgba(245, 178, 159, .7) solid;
     border-radius: 5%;
     padding: 10px;
-    margin: 50px;
-    box-shadow: 0px 0px 50px rgb(247, 215, 148);
+    margin: 30px;
+    box-shadow: 0px 0px 50px rgb(245, 178, 159);
 }
 
 .table-emagrecer-item {
@@ -215,9 +228,9 @@ section {
 }
 
 .table-emagrecer-item:nth-child(2) {
-    border-right: 2px rgba(247, 215, 148, .7) solid;
+    border-right: 2px rgba(245, 178, 159, .7) solid;
     ;
-    border-left: 2px rgba(247, 215, 148, .7) solid;
+    border-left: 2px rgba(245, 178, 159, .7) solid;
     ;
 }
 
@@ -242,41 +255,8 @@ section {
     text-align: center;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    border: 1px rgba(247, 215, 148, .7) solid;
-    box-shadow: 0px 0px 15px rgb(247, 215, 148);
-}
-
-#myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: rgba(229, 145, 224, .6);
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 25px;
-    /* Increase font size */
-}
-
-#myBtn:hover {
-    background-color: rgba(229, 145, 224, .8);
+    border: 1px rgba(245, 178, 159, .7) solid;
+    box-shadow: 0px 0px 15px rgb(245, 178, 159);
 }
 
 @media screen and (max-width:1024px) {
@@ -291,7 +271,7 @@ section {
     .item-sobre:nth-child(3),
     .item-sobre:nth-child(6) {
         width: 100%;
-        margin-top: 15%;
+        margin-top: 10%;
         text-align: justify;
         padding: 2px;
         font-size: 60px
@@ -299,7 +279,7 @@ section {
     .item-sobre:nth-child(1),
     .item-sobre:nth-child(4),
     .item-sobre:nth-child(5) {
-        margin-top: 15%;
+        margin-top: 10%;
         width: 100%;
     }
     .item {
@@ -316,7 +296,7 @@ section {
         width: 100%;
     }
     .nav-item {
-        background-color: rgba(247, 215, 148, 1);
+        background-color: rgba(245, 178, 159, 1);
         margin: 5px;
         text-align: center;
         font-size: 1.5rem;
@@ -346,6 +326,7 @@ section {
     .lista-programa,
     .table-emagrecer {
         margin: 0px;
+        margin-top: 40px;
         padding: 0px;
     }
     .lista-programa-item {
@@ -385,7 +366,7 @@ section {
         line-height: 1.5rem;
     }
     .nav-item {
-        background-color: rgba(247, 215, 148, 1);
+        background-color: rgba(245, 178, 159, 1);
         margin: 5px;
         text-align: center;
         font-size: 1.5rem;
