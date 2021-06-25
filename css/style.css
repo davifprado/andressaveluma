@@ -2,6 +2,7 @@
     font-family: 'OpenSans-Bold';
     src: url("../fonts/OpenSansCondensed-Bold.ttf");
 }
+
 @font-face {
     font-family: 'OpenSans-Light';
     src: url("../fonts/OpenSansCondensed-Light.ttf");
@@ -16,12 +17,13 @@ html {
     font-family: 'OpenSans-Light';
     font-weight: 800;
     line-height: 1.8em;
-    color: rgba(0,0,0, 1);
+    color: rgba(0, 0, 0, 1);
     letter-spacing: 3px;
-    background-color: rgba(245,178,159,0.1);
+    /* background-color: rgba(245, 178, 159, 0.1); */
 }
 
-.img_parallax_topo {
+
+/* .img_parallax_topo {
     position: absolute;
     background-image: url('../images/logo.png');
     background-position: center center;
@@ -33,7 +35,7 @@ html {
     min-height: 100%;
     opacity: .3;
     z-index: -1;
-}
+} */
 
 a {
     text-decoration: none;
@@ -60,10 +62,19 @@ header {
 }
 
 section {
-    background-color: none;
+    /* background-color: none; */
     margin: 0;
     height: auto;
     margin-bottom: 200px;
+}
+
+section>img {
+    position: fixed;
+    top: 70px;
+    left: 5px;
+    width: 40%;
+    height: auto;
+    z-index: -1;
 }
 
 #container {
@@ -113,6 +124,7 @@ section {
     margin-top: 100px;
     height: 80%;
 }
+
 .contato-mapa-item {
     padding: 10px;
     margin: 20px
@@ -173,13 +185,17 @@ section {
 .item-sobre h2 {
     font-weight: bold;
     text-align: center;
+    color: rgba(67, 185, 152, 1);
+    font-weight: bolder;
 }
 
 .item-sobre h3,
 .mapa h3,
-.contato h3  {
+.contato h3 {
     font-size: 2rem;
     font-weight: bold;
+    color: rgba(67, 185, 152, 1);
+    font-weight: bolder;
 }
 
 .nav-item {
@@ -267,6 +283,7 @@ section {
     border: 1px rgba(245, 178, 159, .7) solid;
     box-shadow: 0px 0px 15px rgba(245, 178, 159, .4);
 }
+
 footer {
     background-color: rgba(245, 178, 159, 0.1);
     text-align: center;
@@ -292,9 +309,9 @@ footer {
     }
     .mapa,
     .contato {
-    padding: 10px; 
-    width: 100%;
-    margin-top: 80px;
+        padding: 10px;
+        width: 100%;
+        margin-top: 80px;
     }
     .contato-mapa-item {
         padding: 10px;
