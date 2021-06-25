@@ -34,7 +34,7 @@ html {
     /* background-color: linear-gradient(rgba(245,178,159,1) 100%, rgba(245,178,159,0.2) 100%); */
 }
 
-/* .img_parallax_topo {
+.img_parallax_topo {
     position: absolute;
     background-image: url('../images/logo.png');
     background-position: center center;
@@ -44,7 +44,7 @@ html {
     min-height: 100%;
     opacity: .3;
     z-index: -1;
-} */
+}
 
 a {
     text-decoration: none;
