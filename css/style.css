@@ -41,20 +41,21 @@ html {
     background-image: url('../images/logo.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     
     /* background-color: rgba(245,178,159,0.0); */
     /* background-color: transparent; */
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
-    min-height: 80%;
+    min-height: 100%;
     opacity: .3;
     z-index: -1;
 }
 
 a {
     text-decoration: none;
+    color: rgba(26, 26, 26, .8);
 }
 
 header {
@@ -119,7 +120,25 @@ section {
     width: 100%;
     height: 80%;
 }
+.mapa,
+.contato {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    margin-top: 100px;
+    height: 80%;
+    /* border: 1px red solid; */
+}
+.contato-mapa-item {
+    padding: 10px;
+    margin: 20px
+}
 
+.contato-mapa-item a {
+    font-size: 2rem;
+    /* text-decoration: none!important; */
+}
 .item-sobre {
     width: 100%;
     margin-top: 5%;
@@ -174,7 +193,9 @@ section {
     text-align: center;
 }
 
-.item-sobre h3 {
+.item-sobre h3,
+.mapa h3,
+.contato h3  {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -225,7 +246,7 @@ section {
     border-radius: 5%;
     padding: 5px;
     margin: 30px;
-    box-shadow: 0px 0px 50px rgb(245, 178, 159);
+    box-shadow: 0px 0px 50px rgba(245, 178, 159, .3);
 }
 
 .table-emagrecer-item {
@@ -262,7 +283,7 @@ section {
     font-size: 1.5rem;
     line-height: 2.5rem;
     border: 1px rgba(245, 178, 159, .7) solid;
-    box-shadow: 0px 0px 15px rgb(245, 178, 159);
+    box-shadow: 0px 0px 15px rgba(245, 178, 159, .4);
 }
 
 @media screen and (max-width:1024px) {
@@ -272,6 +293,22 @@ section {
     }
     .container {
         margin-top: 15%;
+    }
+    .mapa,
+    .contato {
+    /* display: flex;
+    flex-direction: column;*/
+    padding: 10px; 
+    width: 100%;
+    margin-top: 80px;
+    /* height: 80%; */
+    }
+    .contato-mapa-item {
+        padding: 10px;
+        margin: 0px;
+    }
+    .contato-mapa-item a {
+        font-size: 1.5rem;
     }
     .item-sobre:nth-child(2),
     .item-sobre:nth-child(3),
@@ -316,7 +353,7 @@ section {
 
 @media screen and (max-width:468px) {
     .img_parallax_topo {
-        min-height: 120%;
+        object-fit: contain;
     }
     .btn {
         width: 90%;
