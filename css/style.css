@@ -1,23 +1,10 @@
 @font-face {
     font-family: 'OpenSans-Bold';
     src: url("../fonts/OpenSansCondensed-Bold.ttf");
-    font-size: 1em;
 }
-@font-face {
-    font-family: 'OpenSans-SemiBold';
-    src: url("../fonts/OpenSans-SemiBold.ttf");
-    font-size: 1em;
-}
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src: url("../fonts/OpenSans-Regular.ttf");
-    font-size: 1em;
-}
-
 @font-face {
     font-family: 'OpenSans-Light';
     src: url("../fonts/OpenSansCondensed-Light.ttf");
-    font-size: 1em;
 }
 
 body,
@@ -29,11 +16,9 @@ html {
     font-family: 'OpenSans-Light';
     font-weight: 500;
     line-height: 1.8em;
-    color: black;
     color: rgba(26, 26, 26, .8);
     letter-spacing: 3px;
     background-color: rgba(245,178,159,0.1);
-    /* background-color: linear-gradient(rgba(245,178,159,1) 100%, rgba(245,178,159,0.2) 100%); */
 }
 
 .img_parallax_topo {
@@ -42,9 +27,6 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    
-    /* background-color: rgba(245,178,159,0.0); */
-    /* background-color: transparent; */
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
@@ -81,6 +63,7 @@ section {
     background-color: none;
     margin: 0;
     height: auto;
+    margin-bottom: 200px;
 }
 
 #container {
@@ -120,6 +103,7 @@ section {
     width: 100%;
     height: 80%;
 }
+
 .mapa,
 .contato {
     display: flex;
@@ -128,7 +112,6 @@ section {
     width: 50%;
     margin-top: 100px;
     height: 80%;
-    /* border: 1px red solid; */
 }
 .contato-mapa-item {
     padding: 10px;
@@ -137,8 +120,8 @@ section {
 
 .contato-mapa-item a {
     font-size: 2rem;
-    /* text-decoration: none!important; */
 }
+
 .item-sobre {
     width: 100%;
     margin-top: 5%;
@@ -174,7 +157,6 @@ section {
 .item-sobre .img-sobre-3 {
     width: 50%;
     text-align: right;
-    /* border-radius: 20%; */
 }
 
 .item-sobre p {
@@ -285,6 +267,16 @@ section {
     border: 1px rgba(245, 178, 159, .7) solid;
     box-shadow: 0px 0px 15px rgba(245, 178, 159, .4);
 }
+footer {
+    background-color: rgba(245, 178, 159, 0.1);
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    /* position: absolute;
+    bottom: 0; */
+    z-index: 100;
+    font-size: 1rem;
+}
 
 @media screen and (max-width:1024px) {
     .btn {
@@ -294,14 +286,15 @@ section {
     .container {
         margin-top: 15%;
     }
+    section {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
     .mapa,
     .contato {
-    /* display: flex;
-    flex-direction: column;*/
     padding: 10px; 
     width: 100%;
     margin-top: 80px;
-    /* height: 80%; */
     }
     .contato-mapa-item {
         padding: 10px;
@@ -338,6 +331,9 @@ section {
     .lista-programa-item {
         width: 100%;
     }
+    .table-emagrecer-item:nth-child(2) {
+        border: none;
+    }
     .nav-item {
         background-color: rgba(245, 178, 159, 1);
         margin: 5px;
@@ -345,9 +341,6 @@ section {
         font-size: 1.5rem;
         border-radius: 10px;
         height: 50px;
-    }
-    .table-emagrecer-item:nth-child(2) {
-        border: none;
     }
 }
 
