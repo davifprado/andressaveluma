@@ -19,6 +19,7 @@ html {
     line-height: 1.8em;
     color: rgb(255, 255, 255);
     letter-spacing: 3px;
+    text-shadow: black 0.1em 0.1em 0.4em;
 }
 
 body {
@@ -165,6 +166,7 @@ section>img {
 }
 
 .item-sobre .img-sobre-2 {
+    
     width: 90%;
     border-radius: 20%;
 }
@@ -190,6 +192,7 @@ section>img {
     text-align: center;
     color: rgb(67, 59, 187);
     font-weight: bolder;
+    text-shadow: white 0.1em 0.1em 0.4em;
 }
 
 .item-sobre h3,
@@ -199,6 +202,7 @@ section>img {
     font-weight: bold;
     color: rgba(67, 59, 187, 1);
     font-weight: bolder;
+    text-shadow: white 0.1em 0.1em 0.4em;
 }
 
 .nav-item {
