@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background-color: rgba(245, 178, 159, 0.1);
+    background-color: rgba(17, 13, 12, 0.5);
 }
 
 
@@ -42,11 +42,11 @@ body {
 
 a {
     text-decoration: none;
-    color: rgba(26, 26, 26, .8);
+    color: rgba(254, 160, 148, 0.8);
 }
 
 header {
-    background-color: rgb(245, 178, 159);
+    background-color: rgb(254, 160, 148);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=90);
     -moz-opacity: 0.90;
@@ -98,7 +98,7 @@ section>img {
 
 .item img {
     width: 70%;
-    border-bottom: 5px rgb(245, 178, 159) ridge;
+    border-bottom: 5px rgb(254, 160, 148) ridge;
     border-radius: 25%;
 }
 
@@ -215,11 +215,11 @@ section>img {
     margin: 5px 10%;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    background-color: rgba(245, 178, 159, 0.7);
+    background-color: rgba(254, 160, 148, 0.7);
 }
 
 .btn_site:hover {
-    background-color: rgba(245, 178, 159, 1.0);
+    background-color: rgba(254, 160, 148, 1.0);
     transform: scale(1.1);
 }
 
@@ -243,11 +243,11 @@ section>img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px rgba(245, 178, 159, .7) solid;
+    border: 1px rgba(254, 160, 148, .7) solid;
     border-radius: 5%;
     padding: 5px;
     margin: 30px;
-    box-shadow: 0px 0px 50px rgba(245, 178, 159, .3);
+    box-shadow: 0px 0px 50px rgba(254, 160, 148, .3);
 }
 
 .table-emagrecer-item {
@@ -258,8 +258,8 @@ section>img {
 
 .table-emagrecer-item:nth-child(2) {
     padding: 10px;
-    border-right: 2px rgba(245, 178, 159, .7) solid;
-    border-left: 2px rgba(245, 178, 159, .7) solid;
+    border-right: 2px rgba(254, 160, 148, .7) solid;
+    border-left: 2px rgba(254, 160, 148, .7) solid;
 }
 
 .table-emagrecer-item h3 {
@@ -283,12 +283,12 @@ section>img {
     text-align: center;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    border: 1px rgba(245, 178, 159, .7) solid;
-    box-shadow: 0px 0px 15px rgba(245, 178, 159, .4);
+    border: 1px rgba(254, 160, 148, .7) solid;
+    box-shadow: 0px 0px 15px rgba(254, 160, 148, .4);
 }
 
 footer {
-    background-color: rgba(245, 178, 159, 0.1);
+    background-color: rgba(254, 160, 148, 0.1);
     text-align: center;
     width: 100%;
     padding: 0;
@@ -355,7 +355,7 @@ footer {
         border: none;
     }
     .nav-item {
-        background-color: rgba(245, 178, 159, 1);
+        background-color: rgba(254, 160, 148, 1);
         margin: 5px;
         text-align: center;
         font-size: 1.5rem;
@@ -422,7 +422,7 @@ footer {
         line-height: 1.5rem;
     }
     .nav-item {
-        background-color: rgba(245, 178, 159, 1);
+        background-color: rgba(254, 160, 148, 1);
         margin: 5px;
         text-align: center;
         font-size: 1.5rem;
